@@ -40,7 +40,6 @@ export const FormTitle = styled.h4`
 `
 
 export const InputContainer = styled.div`
-/* background-color:red; */
   width: 90%;
   margin: 0 auto;
   display: flex;

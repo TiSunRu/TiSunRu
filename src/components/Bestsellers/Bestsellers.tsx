@@ -94,25 +94,23 @@ const Bestsellers: FC = () => {
         <BestsellerWrapper>
             <BestsellerContainer>
                 <TitleSection text={t(title)} />
-                {/* <div style={{ width: "95%" }}> */}
-                    <StyledSlider {...settings}>
-                        {
-                            bestsellers.map((item: any) => {
-                                const { id, title, image } = item;
-                                const img: any = getImage(image);
-                                return (
-                                    <BestsellerCard
-                                        key={id}
-                                        id={id}
-                                        openModal={openModal}
-                                        title={t(title)}
-                                        image={img}
-                                    />
-                                )
-                            })
-                        }
-                    </StyledSlider>
-                {/* </div> */}
+                <StyledSlider {...settings}>
+                    {
+                        bestsellers.map((item: any) => {
+                            const { id, title, image } = item;
+                            const img: any = getImage(image);
+                            return (
+                                <BestsellerCard
+                                    key={id}
+                                    id={id}
+                                    openModal={openModal}
+                                    title={t(title)}
+                                    image={img}
+                                />
+                            )
+                        })
+                    }
+                </StyledSlider>
 
                 <NavigationTitle title={t(navigationButton)} />
                 {
@@ -124,7 +122,6 @@ const Bestsellers: FC = () => {
                         />
                         : null
                 }
-                
             </BestsellerContainer>
         </BestsellerWrapper>
     )

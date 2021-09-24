@@ -17,7 +17,6 @@ const ModalTitle: FC<IModalTitle> = ({ text }) => {
                 <img src={iconUp} alt="iconUp" />
             </LineUp>
             <h3 style={{ fontSize: "32px", margin: "0", fontFamily: "'Montserrat', sans-serif", color: "#fff" }}>
-                {/* en / ru */}
                 { t(text) }
             </h3>
             <LineDown>

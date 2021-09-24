@@ -14,12 +14,10 @@ import {
     FooterWrapper,
     LinksContainer,
     CardLinks,
-    ExtraDescription,
     Social,
     TextItem,
     ExtraWrapperIcon,
     VerticleLine,
-    ExtraDescriptionWrapper,
     IconWrapper,
     LinkItem,
     Leaf,
@@ -54,15 +52,13 @@ const Footer: FC = () => {
                 <TitleSection icon={logo} />
                 <LinksContainer>
                     <CardLinks>
-                        <TextItem><LinkItem href={`${isRu ? `/ru/#cooperation` : `/#cooperation`}`}>{t(item1)}</LinkItem></TextItem>
-                        <TextItem><LinkItem href={`${isRu ? `/ru/#cooperation` : `/#cooperation`}`}>{t(item2)}</LinkItem></TextItem>
-                        <TextItem><LinkItem href={`${isRu ? `/ru/#about` : `/#about`}`}>{t(item5)}</LinkItem></TextItem>
+                        <TextItem><LinkItem href={`${isRu() ? `/ru/#cooperation` : `/#cooperation`}`}>{t(item1)}</LinkItem></TextItem>
+                        <TextItem><LinkItem href={`${isRu() ? `/ru/#cooperation` : `/#cooperation`}`}>{t(item2)}</LinkItem></TextItem>
+                        <TextItem><LinkItem href={`${isRu() ? `/ru/#about` : `/#about`}`}>{t(item5)}</LinkItem></TextItem>
                     </CardLinks>
-                    {/*<Social>*/}
-                        <VerticleLine>
-                            <img src={verticalLine} alt="verticalLine"/>
-                        </VerticleLine>
-                    {/*</Social>*/}
+                    <VerticleLine>
+                        <img src={verticalLine} alt="verticalLine"/>
+                    </VerticleLine>
                     <CardLinks>
                         <Social>
                             <IconWrapper href={URL_FACEBOOK_FOOTER} target="_blank">
@@ -77,18 +73,12 @@ const Footer: FC = () => {
                                 <img src={instagram} alt="instagram" />
                             </IconWrapper>
                         </Social>
-                        {/*<TextItem><LinkItem href="#"></LinkItem></TextItem>*/}
                     </CardLinks>
                 </LinksContainer>
-                {/*<ExtraDescriptionWrapper>*/}
-                {/*    <ExtraDescription></ExtraDescription>*/}
-                {/*    /!*<ExtraDescription>{t(description)}</ExtraDescription>*!/*/}
-                {/*</ExtraDescriptionWrapper>*/}
 
                 <Leaf>
                     <img src={leaf} alt="leaf" />
                 </Leaf>
-
 
             </FooterContainer>
             <Beans>

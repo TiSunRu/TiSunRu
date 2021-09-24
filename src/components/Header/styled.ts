@@ -154,7 +154,6 @@ export const NavigationLink = styled(AnchorLink)`
   line-height: 19px;
   color: #fff;
 
-  // display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;

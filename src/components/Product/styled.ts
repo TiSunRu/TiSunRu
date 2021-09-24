@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { GatsbyImage } from "gatsby-plugin-image";
 
 export const MainWrapper = styled.div`
   display: flex;

@@ -2,10 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import { Wrapper,BackgroundSlide } from './styled'
-
-import banner3svg from '../../../assets/images/banners/banner3svg.svg'
 
 const Banner3 = () => {
   const {
@@ -46,9 +44,6 @@ const Banner3 = () => {
           objectPosition: 'center'
         }}
       />
-      {/*<div>*/}
-      {/*    <img src={banner3svg} alt="banner3svg"/>*/}
-      {/*</div>*/}
       <Container>
         <Text>{t('Многогранный вкус и аромат кофе от TiSun!')}</Text>
         <a href="https://www.wildberries.ru/brands/tisun" target="_blank">
@@ -61,8 +56,8 @@ const Banner3 = () => {
 
 const Container = styled.div`
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   z-index: 20;
   display: flex;
   flex-direction: column;

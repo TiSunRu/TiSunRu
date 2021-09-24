@@ -49,12 +49,11 @@ export const Text = styled.div`
   line-height: 120%;
   color: #036c46;
   @media screen and (max-width: 479px) {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 `
 
 export const Button = styled.button`
-  position: absolute;
   position: absolute;
   bottom: -30%;
   left: 50%;
@@ -82,20 +81,9 @@ export const AboutLeafLeft = styled.div`
 
 export const AboutLeafRight = styled.div`
   position: absolute;
-  position: absolute;
   bottom: -140px;
   right: 0;
   @media screen and (max-width: 767px) {
     display: none;
   }
 `
-
-// export const ModalAboutLogo = styled.div`
-//   position: absolute;
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-//   position: absolute;
-//   left: 13%;
-//   top: 33%;
-// `

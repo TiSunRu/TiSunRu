@@ -7,7 +7,6 @@ import SelectLanguage from '../common/SelectLanguage/SelectLanguage'
 import logo from '../../assets/images/svg/tisun-logo.svg'
 import {
   HeaderWrapper,
-  HeaderContainer,
   HeaderBurgerIcon,
   HeaderBurgerLine,
   HeaderLogoContainer,
@@ -56,7 +55,7 @@ const Header: FC = () => {
             onClick={handleBurger}
             className="header__burger_icon"
           >
-            <HeaderBurgerLine className="header__burger_line"></HeaderBurgerLine>
+            <HeaderBurgerLine className="header__burger_line" />
           </HeaderBurgerIcon>
         </div>
         <HeaderLogoContainer>
@@ -71,7 +70,7 @@ const Header: FC = () => {
             return (
               <NavigationLink
                 key={id}
-                to={`${isRu ? `/ru/#${to}` : `/#${to}`}`}
+                to={`${isRu() ? `/ru/#${to}` : `/#${to}`}`}
                 stripHash
                 onAnchorLinkClick={() => setActive(!active)}
               >

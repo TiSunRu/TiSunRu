@@ -15,9 +15,6 @@ export const BenefitsContainer = styled.div`
 `
 
 export const LeafLeftUp = styled.div`
-  /* position: absolute;
-  top: 0;
-  left: 5.7%; */
   @media screen and (max-width: 767px) {
     display: none;
   }

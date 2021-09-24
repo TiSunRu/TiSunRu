@@ -84,7 +84,6 @@ export const Button = styled.button`
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   @media screen and (max-width: 991px) {
-    /* width: auto; */
   }
   @media screen and (max-width: 767px) {
     padding: 10px 30px;

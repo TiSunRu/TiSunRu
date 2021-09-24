@@ -17,16 +17,6 @@ const NextWrapper = styled.div`
     transition: 0.5s;
     opacity: 0.5;
   }
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: contain;
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     width: 50px;
-//   }
 `
 
 const PrevWrapper = styled.div`
@@ -43,15 +33,6 @@ const PrevWrapper = styled.div`
     transition: 0.5s;
     opacity: 0.5;
   }
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: contain;
-//   }
-//   @media screen and (max-width: 767px) {
-//     width: 50px;
-//   }
 `
 
 export const SampleNextArrow: FC = ({ className, style, onClick }: any) => (

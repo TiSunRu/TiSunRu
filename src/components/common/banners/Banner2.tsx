@@ -2,11 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import { graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import label from '../../../assets/images/svg/tisun-label.svg'
 import { LabelIcon, Wrapper, BackgroundSlide } from './styled'
-
-import banner2svg from '../../../assets/images/banners/banner2svg.svg'
 
 const Banner2 = () => {
   const {
@@ -47,12 +45,7 @@ const Banner2 = () => {
         }}
       />
 
-      {/*<div>*/}
-      {/*    <img src={banner2svg} alt="banner2svg"/>*/}
-      {/*</div>*/}
-
       <Container>
-        {/* en / ru */}
         <Title>{t('Открой для себя разнообразие вкусов чая от TiSun!')}</Title>
         <LabelIcon>
           <img src={label} alt="label" />

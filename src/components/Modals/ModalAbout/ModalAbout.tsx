@@ -84,13 +84,11 @@ const ModalAbout: FC<ModalAboutProps> = ({ onClose, isOpen }) => {
                     <img src={close} alt="close"/>
                 </ModalCloseIcon>
                 <TitleSection text={t(title)} />
-                {/* <div style={{ padding: "0 50px 0 50px" }}> */}
-                    <Text>{t(titleParagraph1)}</Text>
-                    <Text>{t(paragraph1)}</Text>
-                    <Text>{t(titleParagraph2)}</Text>
-                    <Text>{t(paragraph2item1)}</Text>
-                    <Text>{t(paragraph2item2)}</Text>
-                {/* </div> */}
+                <Text>{t(titleParagraph1)}</Text>
+                <Text>{t(paragraph1)}</Text>
+                <Text>{t(titleParagraph2)}</Text>
+                <Text>{t(paragraph2item1)}</Text>
+                <Text>{t(paragraph2item2)}</Text>
             </BackgroundImage>
         </Modal>
     )

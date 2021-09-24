@@ -5,11 +5,10 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import emailjs from "emailjs-com";
 import ModalTemplate from "../../common/Modal/ModalTemplate";
 import ModalManager from "../../common/Modal/ModalManager";
-import { BrandContainer, BranImageContainer, Label } from './styled'
+import { BrandContainer, BranImageContainer } from './styled'
 import { Description, ListTitle, ListItem } from "../ModalPartners/styled";
 import {
     ButtonClients,
-    FormTitle,
     Input,
     InputContainer,
     InputLabel,
@@ -152,7 +151,7 @@ const ModalClients: FC<ModalClientsProps> = ({ onClose, isOpen }) => {
                 <ListItem>{t(list1Item1)}</ListItem>
                 <ListItem>{t(list1Item2)}</ListItem>
                 <ListItem>{t(list1Item3)}</ListItem>
-                {/* brand */}
+
                 <BrandContainer>
                     <BranImageContainer>
                         <GatsbyImage alt="image1" image={img1} />
@@ -164,7 +163,6 @@ const ModalClients: FC<ModalClientsProps> = ({ onClose, isOpen }) => {
                         <GatsbyImage alt="image3" image={img3} />
                     </BranImageContainer>
                 </BrandContainer>
-                {/* brand */}
 
                 <ModalManager />
 

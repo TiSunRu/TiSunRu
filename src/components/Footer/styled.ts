@@ -11,6 +11,7 @@ export const Leaf = styled.div`
   position: absolute;
   top: 50%;
   right: 85%;
+  z-index: 10;
   img {
     width: 100%;
     height: 100%;
@@ -26,6 +27,7 @@ export const Beans = styled.div`
   right: 0;
   bottom: 0;
   width: 50%;
+  z-index: 1;
   img {
     width: 100%;
     height: 100%;
@@ -73,12 +75,7 @@ export const IconWrapper = styled.a`
   padding: 15px;
 `
 
-export const ExtraWrapperIcon = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative; */
-`
+export const ExtraWrapperIcon = styled.div``
 
 export const VerticleLine = styled.div`
   position: absolute;
@@ -90,23 +87,9 @@ export const VerticleLine = styled.div`
   }
 `
 
-export const ExtraDescriptionWrapper = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-`
+export const ExtraDescriptionWrapper = styled.div``
 
-export const ExtraDescription = styled.div`
-  /* width: 666px;
-  height: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #000000;
-  margin-top: 90px;
-  margin-bottom: 50px; */
-`
+export const ExtraDescription = styled.div``
 
 export const TextItem = styled.p`
   margin-bottom: 35px;

@@ -31,7 +31,6 @@ const ReviewCardItem: FC<ReviewCardProps> = ({ stars, name, comment }) => {
                         ))
                     }
                 </StarsContainer>
-                {/* en / ru */}
                 <Name>{t(name)}</Name>
                 <Comment>{t(comment)}</Comment>
             </ReviewCard>

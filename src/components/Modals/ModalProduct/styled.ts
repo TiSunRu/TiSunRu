@@ -26,12 +26,10 @@ export const StyledSlider = styled(Slider)`
 export const ImageWrapper = styled.div`
   width: 100%;
   img {
-    /* display: none; */
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  /* //margin-left: 100px; */
 `
 
 export const Header = styled.h3`
@@ -46,8 +44,6 @@ export const Header = styled.h3`
 export const StyledGatsbyImage = styled(GatsbyImage)`
   height: 85px;
   width: 75px;
-  //left: 10%;
-  //top: 10%;
 `
 
 export const DotsContainer = styled.div`
