@@ -135,7 +135,7 @@ const ModalClients: FC<ModalClientsProps> = ({ onClose, isOpen }) => {
 
             setDisabled(true)
 
-            await emailjs.send('feedback', 'template_ndvqjkc', sendData, 'user_33Snq8wbtl4IGD7ZRgUgW')
+            await emailjs.send('feedback', 'template_ohn96ck', sendData, 'user_FEQ3kl657rlQs51bO9m2m')
 
             onClose();
         } catch (e) {
