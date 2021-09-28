@@ -116,7 +116,7 @@ const ModalPartners: FC<ModalPartnersProps> = ({ onClose, isOpen }) => {
 
             setDisabled(true)
 
-            await emailjs.send('feedback', 'template_ohn96ck', sendData, 'user_FEQ3kl657rlQs51bO9m2m')
+            await emailjs.send('service_j5l9iq5', 'template_ohn96ck', sendData, 'user_FEQ3kl657rlQs51bO9m2m')
 
             onClose();
         } catch (e) {
