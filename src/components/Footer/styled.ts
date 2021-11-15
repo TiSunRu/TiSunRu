@@ -39,6 +39,7 @@ export const Beans = styled.div`
 `
 
 export const LinksContainer = styled.div`
+  z-index: 4;
   position: relative;
   display: flex;
   justify-content: space-between;
