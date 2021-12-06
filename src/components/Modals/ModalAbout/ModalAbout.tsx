@@ -14,7 +14,7 @@ Modal.setAppElement(`#___gatsby`);
 
 const customStyles = {
     content: {
-        top: '50px',
+        top: '120px',
         left: '50%',
         transform: 'translate(-50%, 0)',
         right: 'auto',

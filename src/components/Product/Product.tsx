@@ -11,8 +11,8 @@ const Product: FC = () => {
             <ProductImage>
                 {
                     isRu()
-                    ? <img src={product} alt="product" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-                    : <img src={productEn} alt="product" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                    ? <img src={productEn} alt="product" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                    : <img src={product} alt="product" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
                 }
             </ProductImage>
             <LeafWrapper>

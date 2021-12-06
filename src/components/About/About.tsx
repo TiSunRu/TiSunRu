@@ -6,21 +6,15 @@ import {useTranslation} from "gatsby-plugin-react-i18next";
 import { convertToBgImage } from "gbimage-bridge"
 import ModalAbout from "../Modals/ModalAbout/ModalAbout";
 import leafLeft from '../../assets/images/svg/about-leaf-left.svg'
-import leafRight from '../../assets/images/svg/about-leaf-right.svg'
-import logo from '../../assets/images/svg/about-logo.svg'
 import {
     DescriptionContainer,
     AboutWrapper,
     Text,
     Button,
     AboutLeafLeft,
-    AboutLeafRight,
     Title,
     DescriptionWrapper,
-    ModalAboutLogo
 } from './styled'
-
-import backgroundsvg from '../../assets/images/about/backgroundsvg.svg'
 
 const About: FC = () => {
     const { about: { frontmatter } } = useStaticQuery(
@@ -63,12 +57,6 @@ const About: FC = () => {
     return (
         <AboutWrapper id="about" >
             <BackgroundImage className="backgroundImage"  {...bgImage} preserveStackingContext style={{ paddingTop: "200px", paddingBottom: "500px" }}>
-            {/*<div style={{ position: "relative" }}>*/}
-                {/*<img src={backgroundsvg} alt="backgroundsvg" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />*/}
-                {/* <ModalAboutLogo>
-                    <img src={logo} alt="logo" />
-                </ModalAboutLogo> */}
-
                 <DescriptionWrapper>
                     <DescriptionContainer>
                         <Title>{t(title)}</Title>
@@ -82,15 +70,11 @@ const About: FC = () => {
                 <AboutLeafLeft>
                     <img src={leafLeft} alt="leafLeft" />
                 </AboutLeafLeft>
-                {/*<AboutLeafRight>*/}
-                {/*    <img src={leafRight} alt="leafRight" />*/}
-                {/*</AboutLeafRight>*/}
                 {
                     isOpenModalAbout
                         ? <ModalAbout onClose={closeModalAbout} isOpen={isOpenModalAbout} />
                         : null
                 }
-            {/*</div>*/}
             </BackgroundImage>
         </AboutWrapper>
     )

@@ -19,7 +19,7 @@ interface CustomModalProps {
 const ModalTemplate: FC<CustomModalProps> = ({ title, onClose, onSubmit, isOpen, type, children }) => {
     const customStyles = {
         content: {
-            top: '80px',
+            top: '140px',
             left: '50%',
             right: 'auto',
             bottom: 'auto',

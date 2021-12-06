@@ -24,7 +24,6 @@ const SliderBanner: FC = () => {
 
     return (
         <StyledSlider {...settings}>
-            
             <Banner1 />
             <Banner2 />
             <Banner3 />
